@@ -36,6 +36,8 @@
 
 本教程基于 `v1.15` 官方文档进行学习
 
+<https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/>
+
 ## 简单尝试 Ｋｕｂｅｒｎｅｔｅｓ
 
 > Bascil - Kubernetes 基础模块
