@@ -38,6 +38,8 @@
 
 <https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/>
 
+总架构图 <https://blog.csdn.net/huwh_/article/details/71308171>
+
 ## 简单尝试 Ｋｕｂｅｒｎｅｔｅｓ
 
 > Bascil - Kubernetes 基础模块
