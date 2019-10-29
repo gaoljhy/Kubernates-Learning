@@ -12,7 +12,7 @@
 
 虽然可以通过`Manifest`创建一个Node对象（如下`json`所示），但`Kubernetes`也只是去检查是否真的是有这么一个`Node`，如果检查失败，也不会往上调度`Pod`。
 
-```yaml
+```json
 {
   "kind": "Node",
   "apiVersion": "v1",

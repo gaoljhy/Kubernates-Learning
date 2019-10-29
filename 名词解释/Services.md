@@ -39,7 +39,7 @@
 
 比如，假设拥有一些`Pod`,每个`pod`都开放了`9376`端口，并且均带有一个标签`app=MyApp`
 
-```yaml
+```json
 {
 “kind”: “Service”,
 “apiVersion”: “v1”,
@@ -93,7 +93,7 @@
 
 如上的情况下，可以定义一个服务没有选择器
 
-```yaml
+```json
 {
     “kind”: “Service”,
     “apiVersion”: “v1″,
@@ -114,7 +114,7 @@
 
 因为没有**选择器**，所以相应的`Endpoints`对象就不会被创建，但是可以手动把的服务和`Endpoints`对应起来
 
-```yaml
+```json
 {
 “kind”: “Endpoints”,
 “apiVersion”: “v1″,
@@ -159,7 +159,7 @@
 
 例如
 
-```yaml
+```json
 {
 “kind”: “Service”,
 “apiVersion”: “v1”,

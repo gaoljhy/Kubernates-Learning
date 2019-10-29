@@ -13,7 +13,7 @@
 4. 标签可以在创建一个对象的时候直接给与，也可以在后期随时修改
 5. 每一个对象可以拥有多个标签，但是，key值必须是唯一的
 
-```yaml
+```json
 "labels": {
  "key1" : "value1",
  "key2" : "value2"
@@ -35,7 +35,7 @@ Label可以让用户将他们自己的有组织目的的结构以一种松耦合
 
 ### Label例子
 
-```yaml
+```
 “release” : “stable”, “release” : “canary”, …
  “environment” : “dev”, “environment” : “qa”, “environment” : “production”
  “tier” : “frontend”, “tier” : “backend”, “tier” : “middleware”
@@ -109,7 +109,7 @@ Label其实是一对 `key/value`
 
 例如：
 
-```yaml
+```
 environment in (production, qa)
 tier notin (frontend, backend)
 partition
