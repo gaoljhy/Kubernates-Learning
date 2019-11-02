@@ -34,11 +34,11 @@
 
 ****
 
-本教程基于 `v1.15` 官方文档进行学习
+本教程基于 `v1.15` 官方文档和 <<Kubernetes权威指南>> 进行学习
 
 <https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/>
 
-总架构图 <https://blog.csdn.net/huwh_/article/details/71308171>
+
 
 ## 简单尝试 Ｋｕｂｅｒｎｅｔｅｓ
 
