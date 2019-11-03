@@ -1,0 +1,1 @@
+<https://github.com/kubernetes-sigs/kustomize/tree/master/docs/zh>
