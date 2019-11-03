@@ -1,11 +1,21 @@
 # 安装
 
+## 关闭selinux或者设置为警告,后面可能会启动不了
+
 ## 安装minikube
+
+### 代理国外节点
 
 ```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
    && sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
+```
+
+### 国内阿里云
+
+```
+curl -Lo minikube https://github.com/kubernetes/minikube/releases/download/v1.5.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
 ## 安装 kubectl
