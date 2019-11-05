@@ -2,6 +2,12 @@
 
 ## 关闭selinux或者设置为警告,后面可能会启动不了
 
+> 生产环境可以设置为开启`8443`端口配置固定规则
+
+## 关闭 内存交换
+
+`sudo swapoff -a`
+
 ## 安装minikube
 
 ### 代理国外节点
@@ -11,6 +17,9 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
    && sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ```
+
+> 文件可在 `/var/lib/minikube` 中找到相关的`kubelete`命令和`kubeadm`
+
 
 ### 国内阿里云
 
@@ -27,6 +36,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 ## 指定虚拟化(若没有则不指定)
 
 `minikube config set vm-driver 虚拟化架构`
+
 
 `virtualbox` 或者 `kvm2` 或者 `none`
 
@@ -85,5 +95,7 @@ sudo yum remove docker \
 
 ### 若被墙掉,使用国内镜像
 
-`minikube start --registry-mirror=https://registry.docker-cn.com`
+`minikube start  --registry-mirror=https://registry.docker-cn.com`
 成功之后使用 `kubectl` 接入
+
+
