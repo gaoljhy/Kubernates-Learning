@@ -1,0 +1,32 @@
+Minkube 启动出现的问题
+
+minikube 自带 kubelet kubeadm kubectl ，在bin目录下有
+
+修改docker 或者 kubelet 的`cgroups driver` 使得他俩使用的cgroups 驱动一致
+
+{ "exec-opts": ["native.cgroupdriver=systemd"] }
+
+
+关闭交换分区
+
+swapoff -a
+修改 /etc/fstab 下的交换分区挂载
+mount -a
+
+用 cat /proc/swaps 检验是否成功关闭
+
+解决gfw镜像拉取屏蔽问题
+
+先查看 版本依赖 kubeadm config images list
+
+后用docker.io仓库对google的容器做了镜像，可以通过下列命令下拉取相关镜像：
+将 k8s.gcr.io 换成 mirrorgooglecontainers 
+
+或者直接挂代理下载
+
+export http_proxy=http://192.168.0.105:1089；
+export https_proxy=http://192.168.0.105:1089；
+
+minikube start --docker-env HTTP_PROXY=${http_proxy} --docker-env HTTPS_PROXY=${https_proxy}
+
+
